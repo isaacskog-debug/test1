@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+</head>
+<body>
+<h1>Start</h1>
+
+<div>
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <div><label> User Name : <input type="text" name="username"/> </label></div>
+        <div><label> Password: <input type="password" name="password"/> </label></div>
+        <div><input type="submit" value="Sign In"/></div>
+    </form>
+</div>
+
+<div>
+    <h2>Create user</h2>
+    <form action="/user" method="POST">
+        <div><label> User Name : <input type="text" name="username"/> </label></div>
+        <div><label> Password: <input type="password" name="password"/> </label></div>
+        <div><input type="submit" value="Create user"/></div>
+    </form>
+</div>
+
+<div>
+    <a href="/secret">Secret</a>
+</div>
+</body>
+</html>

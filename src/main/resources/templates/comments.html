@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- -->
+<div>
+    <h2>Make a comment</h2>
+    <form action="/comment" method="POST">
+        <div><label> Comment : <input type="text" name="text"/> </label></div>
+        <div><input type="submit" value="Submit comment"/></div>
+    </form>
+</div>
+
+
+<div>
+    <h2>Comments</h2>
+    <ul>
+        <!--På sidan comments.html ändrar du hur comment.text skrivs ut av thymeleaf genom att ändra th:utext till th:text istället. -->
+        <!--<li th:each="comment : ${comments}" th:utext="${comment.text}"></li> --> förre ändring
+        <!-- Försök till förebyggande arbete 2 -->
+        <li th:each="comment : ${comments}" th:text="${comment.text}"></li>
+    </ul>
+</div>
+</body>
+</html>
